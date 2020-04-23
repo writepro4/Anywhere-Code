@@ -1,4 +1,4 @@
-//Object_Destructuring.js 객체 값을 받아올때에 매우 간편하게 분리할 수 있다.
+//ObjectDestructuring.js 객체 값을 받아올때에 매우 간편하게 분리할 수 있다.
 
 //오브젝트 변수
 const setting = {
