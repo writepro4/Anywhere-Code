@@ -1,7 +1,40 @@
-.box{
-    background: blue;
-    width : 100px;
-    height: 100px;
-    display: inline-block;
+/*.box{*/
+/*    background: blue;*/
+/*    width : 300px;*/
+/*    height: 300px;*/
+/*    display: inline-block;*/
 
+/*}*/
+
+/*.box:nth-child(2){*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.box:nth-child(3){*/
+/*    margin-left: 100px;*/
+/*}*/
+
+/*body{*/
+/*    !*inline-block과 같은 효과를 얻을 수 있다. *!*/
+        /*바로 위에 있는 flex만 효과가 적용됨.*/
+/*    display: flex;*/
+/*}*/
+
+.wrapper {
+    /*바로 밑 자식에게만 효과를 줌으로 유의해야함.*/
+    display: flex;
+    /*가로축 정렬하기*/
+    justify-content: space-around;
+    /*세로축 정렬하기*/
+    align-items: center;
+    /*wrapper (부모) 클래스의 높이가 정해져야만 세로 정렬을 할수가 있다.*/
+    height: 50vh;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    color: aliceblue;
 }
