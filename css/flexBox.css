@@ -1,21 +1,26 @@
 
-.wrapper {
+.father {
     /*flex-direction의 기본 값은 row이다.*/
-    flex-direction: column;
+    /*column = 세로*/
+    flex-direction: row;
     /*바로 밑 자식에게만 효과를 줌으로 유의해야함.*/
     display: flex;
     /*가로축 정렬하기*/
     justify-content: space-around;
     /*세로축 정렬하기*/
-    align-items: center;
+    /*align-items: center;*/
     /*wrapper (부모) 클래스의 높이가 정해져야만 세로 정렬을 할수가 있다.*/
-    height: 80vh;
+    height: 100vh;
 }
 
 
-.box {
+.child {
     width: 200px;
     height: 200px;
     background: aqua;
     color: aliceblue;
+}
+
+.child:nth-child(2) {
+    align-self: center;
 }
