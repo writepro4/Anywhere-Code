@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<script language="javascript" type='text/javascript' src='js/progress.js'></script>
+<script>
+
+    var init_cp_style = {
+        outer_layout_height: '', //* 프로그레스바 전체 레이아웃 높이 (default value = '', type = String)
+                                 //* (최소 높이(pixel) : '50')
+
+        outer_layout_width: '',  //* 프로그레스바 전체 레이아웃 넓이 (default value = '', type = String)
+                                 //* (최소 넓이(pixel) : '200')
+
+        outer_layout_backColor: '', //* 프로그레스바 전체 배경색 (default value = '', type = String)
+                                    //* (초기 배경색 값: '#eeeeee')
+
+        inner_cp_line_bold: '', //* 프로그레스바 라인 굵기 (default value = '', type = String)
+                                //* (최소 굵기: '3', type = String)
+
+        inner_text_value: 'Notify Text for User...'
+    };
+
+    init_setting_cp(init_cp_style);
+    draw_cp();
+
+    // *************** 프로그레스바 동작 함수 *************** //
+
+    //* 프로그레스바 초기 진행은,
+    //  draw_cp();
+
+    //* 프로그레스바 멈추고 싶으면,
+    //  pause_cp();
+
+    //* 프로그레스바 다시 진행하고 싶으면,
+    //  relay_cp();
+
+    //* 프로그레스바 없애려면,
+    //  hide_cp();
+
+
+    // *************** 정상작동 확인 코드 *************** //
+
+    //* 2초 간격으로 위의 함수들 실행.
+    //* ( 진행 -> 일시정지 -> 다시 진행 -> 사라짐 )
+
+    //  setTimeout(function() {
+    //      draw_cp();
+    //  }, 2000);
+    //  setTimeout(function() {
+    //      pause_cp();
+    //  }, 4000);
+    //  setTimeout(function() {
+    //     relay_cp();
+    //  }, 6000);
+    //  setTimeout(function() {
+    //    hide_cp();
+    //  }, 8000);
+
+
+</script>
+
+
+</body>
+
+</html>
