@@ -10,7 +10,7 @@
     /*세로축 정렬하기*/
     /*align-items: center;*/
     /*wrapper (부모) 클래스의 높이가 정해져야만 세로 정렬을 할수가 있다.*/
-    height: 100vh;
+    height: 120vh;
 }
 
 .child {
