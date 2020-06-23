@@ -10,5 +10,8 @@ const item = ["mon", "tue"]
 
 const item = [...item]
 
-# css
+
+>현재는 블로그에 포스팅 중 입니다.
+
+사이트 링크 - https://gaebal4.tistory.com/
 
